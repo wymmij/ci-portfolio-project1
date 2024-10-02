@@ -153,6 +153,37 @@ blockquote {
     margin-inline: 40px;
 }
 
+/* Contact page */
+#contact {
+    background-image: url('../images/contact-page-image.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    margin: 10px 0;
+    flex-grow: 1;
+}
+
+#contact-form {
+    color: white;
+    background-color: rgba(80, 80, 80, 0.7);
+    padding: 30px;
+    margin: auto;
+    max-width: 500px;
+}
+
+#contact label,
+#contact button {
+    display: block;
+    margin-top: 10px;
+}
+
+#contact textarea {
+    height: 150px;
+    width: 100%;
+    max-width: 300px;
+    resize: none;
+}
+
 
 /* Footer */
 #socials {
@@ -224,5 +255,11 @@ blockquote {
 
     header {
         right: calc(50% - 11px - 1rem - 496px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    img {
+        max-width: 320px;
     }
 }
