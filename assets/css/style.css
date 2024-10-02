@@ -13,6 +13,9 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -30,6 +33,65 @@ h1 {
     font-style: normal;
     display: inline-block;
     padding-right: 1em;
+}
+
+
+header {
+    background-color: white;
+    padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: 99;
+    width: calc(100% - 22px - 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+/* Nav toggle */
+/* input checkbox not shown */
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+}
+
+#nav-toggle:checked ~ nav {
+    display: block;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    background-color: #ffffff;
+    display: none;
+}
+
+#menu {
+    position: absolute;
+    top: 55px;
+    right: -4px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+
+#menu > a {
+    font-family: Amatic SC;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 
@@ -51,7 +113,8 @@ img {
 
 img ~ p {
     margin-top: 0;
-    font-size: 0.7em;
+    font-family: "Amatic SC";
+    font-size: 1em;
     text-align: center;
 }
 
