@@ -37,8 +37,20 @@
     <!-- Main Content -->
     <main>
         <section>
+            <form id="contact-form" method="POST" action="https://formdump.codeinstitute.net">
+                <p>Sign up with your email address to be informed of my upcoming exhibitions</p>
 
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" class="text-input" required>
 
+                <label for="email-address">Email Address:</label>
+                <input type="email" name="email_address" id="email-address" class="text-input" required>
+
+                <label for="message">You can also send me a message if you have specific enquiries.</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
         </section>
     </main>
 
