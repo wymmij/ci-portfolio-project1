@@ -1,131 +1,88 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Tamara Wells • Fluid Worlds
 
-Welcome Edward James Wells,
+Fluid Worlds is for art lovers who enjoy seeking out the novel and unconventional in art. A particular target of the site are purchasers of art, frequent or infrequent, who may be looking for something attention grabbing to hang on their wall. A better feel for the art can often be gained from knowing a little more about the person who made it, and so an aim of the site is to help reveal the art through the artist.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features 
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+#### index.html
+The landing page takes you straight into the art with a gallery display showcasing the range of Tamara's work. No eye-catching ‘hero’ image necessary here as the art should speak entirely for itself. Each painting has a description of the medium and type of support used, as well as the metric dimensions of that support. Each image will increase in size as the viewport increases in size, while also ensuring the images never get too big; this is art that has its greatest effect at a distance.
 
-## Gitpod Reminders
+#### about.html
+The about page should give a sense of the person who produced the art, but while perhaps also preserving something of the mystique of the artist.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+#### contact.html
+And so for those who have truly connected with what they've seen, their further interest can be registered here, and by submitting an email address they can be kept informed of future exhibitions. The form also serves as a means of expressing a possible interest in buying some of the art
 
-`python3 -m http.server`
+### Existing Features
 
-A blue button should appear to click: _Make Public_,
+- __Navigation Bar__
 
-Another blue button should appear to click: _Open Browser_.
+  - It's the same on all three pages, and by design as the consistency aids the user with a familiar method of navigating the site.
+  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+- __The Footer__ 
 
-A blue button should appear to click: _Make Public_,
+  - The footer section is just a series of links to the relevant social network sites. The links open to a new tab to allow easy navigation for the user. 
+  - The footer is has value as it allows the user to connect to the artist on other social networks and gain a different insight into the artist behind the art.
 
-Another blue button should appear to click: _Open Browser_.
+### Features Left to Implement
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- The ability to enlarge each image. This is a standard capability of art websites and by not having it the user's expections are at risk of being frustrated. Nevertheless, how much zooming should be permitted needs consideration. As noted, ‘too much’ is very possible and may only serve to weaken the overall impression of the art.
+- The ability to make online purchases of the art would be a great feature to implement. People like it. People expect it.
 
-To log into the Heroku toolbelt CLI:
+## Testing
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- How the pages cope at different screen sizes formed the bulk of the testing, and in any case took up the bulk of the time in coding too.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+### Browsers
+- Chrome
+- Firefox
+- Qutebrowswer
+- Nyxt
 
-### Connecting your Mongo database
+#### Issues
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+- **Chrome**: The `header` element would move a few pixels and then back again when navigating between pages. However, it would only do so inconsistently; perhaps 25% of the time. I couldn't track down the cause of this either. All other browsers were perfectly fine, but Chrome has the highest number of users so it requires further investigation.
 
-------
+### Validator Testing 
 
-## Release History
+- HTML
+  - Errors were initially found when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwymmij.github.io%2Fci-portfolio-project1%2Findex.html) 
+    These were closing forward slashes on img tags that the beautifier had added.
+- CSS
+  - Errors were initially found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwymmij.github.io%2Fci-portfolio-project1%2Findex.html)
+    The error was from a property/value pair supplied by Google fonts. `font-size-adjust: auto;` but apparently auto is not recognized as a permissible value. After reading about the property correctly, I removed the pair since it wasn't necessary for my usage.
+- All errors were corrected and re-validation was successful in both cases.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Unfixed Bugs
 
-**June 18, 2024,** Add Mongo back into template
+None I'm aware of.
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+## Deployment
 
-**May 28 2024:** Fix Mongo and Links installs
+Initially, I deployed the site on my local machine and ran on an `apache` server while I played around with a few ideas.
 
-**April 26 2024:** Update node version to 16
+Later I deployed the site using **GitHub Pages**: [https://wymmij.github.io/ci-portfolio-project1/index.html](https://wymmij.github.io/ci-portfolio-project1/index.html)
 
-**September 20 2023:** Update Python version to 3.9.17.
+- The steps to deploy are as follows: 
+  - On the GitHub repository, go to the Settings tab 
+  - Select ‘Pages’ on the menu on the left under ‘Code and automation’
+  - Make sure the ‘main’ branch is selected and that the /(root) folder is also selected
+  - Deployment should take a few minutes or so. 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Credits 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- Generally, I consulted the references page on [W3Schools](https://www.w3schools.com/) extensively
+- I also worked my way through ‘CSS in Depth’ by Keith J. Grant, published by Manning and now in its 2nd edition. In particular Chapter 4 on Flexbox.
+- I adapted the ‘Hamburger Menu’ example from the ‘Love Running’ project to use in my project. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Content 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- The main text on the About page was used with permission from both the artist and the author, Mathias Beck. 
+- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Media
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- All images were provided by the artist.
+- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The favicon was converted from one of the artist's images. I used the website [favicon.io](https://favicon.io/favicon-converter/) to do the conversion.
