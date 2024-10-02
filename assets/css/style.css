@@ -54,3 +54,17 @@ img ~ p {
     font-size: 0.7em;
     text-align: center;
 }
+
+
+/* Footer */
+#socials {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+#socials i {
+    font-size: 2em;
+}
