@@ -142,3 +142,39 @@ img ~ p {
 #socials i {
     font-size: 2em;
 }
+
+@media screen and (min-width: 452px) {
+    main {
+        margin-top: 95px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        position: absolute;
+        top: -12px;
+        right: 0;
+        display: block;
+    }
+
+    #menu {
+        display: flex;
+        right: 20px;
+        border-radius: 4px;
+    }
+
+    #menu > a {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        right: calc(50% - 11px - 1rem - 496px);
+    }
+}
