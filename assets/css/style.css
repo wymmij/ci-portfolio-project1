@@ -44,6 +44,7 @@ header {
     right: 0;
     z-index: 99;
     width: calc(100% - 22px - 2rem);
+    max-width: 992px;
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -143,13 +144,33 @@ img ~ p {
     font-size: 2em;
 }
 
+@media screen and (min-width: 280px) {
+    img {
+        max-width: 200px;
+    }
+}
+
 @media screen and (min-width: 452px) {
+    img {
+        max-width: 220px;
+    }
+
     main {
         margin-top: 95px;
     }
 }
 
+@media screen and (min-width: 576px) {
+    img {
+        max-width: 230px;
+    }
+}
+
 @media screen and (min-width: 768px) {
+    img {
+        max-width: 240px;
+    }
+
     /* Header */
     nav {
         position: absolute;
@@ -174,6 +195,10 @@ img ~ p {
 }
 
 @media screen and (min-width: 992px) {
+    img {
+        max-width: 260px;
+    }
+
     header {
         right: calc(50% - 11px - 1rem - 496px);
     }
