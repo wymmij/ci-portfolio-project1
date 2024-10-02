@@ -10,7 +10,6 @@
 /* General styles */
 body {
     font-family: "Cormorant", serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     min-height: 100vh;
@@ -27,7 +26,6 @@ h1 {
 
 #thematic-title {
     font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
     font-size: 0.85em;
     font-weight: 400;
     font-style: normal;
@@ -91,7 +89,7 @@ nav {
 }
 
 #menu > a {
-    font-family: Amatic SC;
+    font-family: 'Amatic SC';
     color: white;
     padding: 10px 16px;
     text-decoration: none;
