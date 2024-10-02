@@ -76,6 +76,10 @@ nav {
     display: none;
 }
 
+.current {
+    border: 2px solid #ffffff;
+}
+
 #menu {
     position: absolute;
     top: 55px;
