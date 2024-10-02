@@ -1,3 +1,38 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+/* Override the browser's default styles with the wildcard selector (asterisk) */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#thematic-title {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-size: 0.85em;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    padding-right: 1em;
+}
+
+
 /* Gallery page */
 #photos {
     display: flex;
