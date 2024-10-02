@@ -130,6 +130,29 @@ img ~ p {
     text-align: center;
 }
 
+/* About page */
+#about {
+    margin: auto;
+    width: calc(100% - 22px - 2rem);
+    max-width: 992px;
+}
+
+#the-artist {
+    text-align: center;
+}
+
+#about p {
+    margin-block: 1em;
+}
+
+blockquote {
+    font-family: "Caveat", cursive;
+    font-weight: 700;
+    font-style: normal;
+    margin-block: 1em;
+    margin-inline: 40px;
+}
+
 
 /* Footer */
 #socials {
