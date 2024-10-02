@@ -35,7 +35,6 @@ h1 {
     padding-right: 1em;
 }
 
-
 header {
     background-color: white;
     padding: 0 1rem;
@@ -92,6 +91,18 @@ nav {
     padding: 10px 16px;
     text-decoration: none;
     display: block;
+}
+
+/* Main content */
+main {
+    /* element is both flex container ... */
+    display: flex;
+    /* ... and flex item */
+    flex: 1 0 auto;
+    /* flex container property */
+    flex-direction: column;
+    /* pushes the element down to create room for header */
+    margin-top: 150px;
 }
 
 
