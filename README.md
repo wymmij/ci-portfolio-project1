@@ -74,6 +74,14 @@ And so for those who have truly connected with what they've seen, their further 
   ![lighthouse](assets/images/fluid-worlds_lighthouse.png)
 
   - Assessibility score the only issue: the contrast-ratio for the navbar is apparently insufficient.
+    I am a little colour-blind and though it seems perfectly fine to me, I know that my judgement with colours can be very unreliable.
+    Here is a better contrast-ratio:
+
+  ![better-contrast-navbar](assets/images/fluid-worlds_better-contrast-navbar.png)
+
+  The lighthouse score also improved as a result!
+
+  ![lighthouse](assets/images/fluid-worlds_better-lighthouse.png)
 
 ### Unfixed Bugs
 
